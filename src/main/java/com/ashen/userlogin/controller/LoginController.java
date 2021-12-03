@@ -13,7 +13,7 @@ public class LoginController {
     @Autowired
     UserDao userDao;
 
-    @CrossOrigin
+    @CrossOrigin("http://localhost:8080")
     @RequestMapping("/login")
     public String userLogin(@RequestBody User user) {
         System.out.println("User : " + user);
